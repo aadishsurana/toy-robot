@@ -27,7 +27,6 @@ if (args.length > 0) {
             }
             else if (commandName !== 'PLACE') {
                 switch (commandName) {
-
                     case 'MOVE':
                         robot.move()
                         break;
@@ -36,6 +35,7 @@ if (args.length > 0) {
                     case 'RIGHT':
                         robot.rotate(commandName);
                         break;
+                        
                     case 'REPORT':
                         console.log("\nOutput:" + robot.x + "," + robot.y + "," + robot.facing + "\n");
                         break;
